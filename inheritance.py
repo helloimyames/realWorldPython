@@ -11,10 +11,10 @@ class Vehicle:
         if self.gas > 0:
             self.gas -= 1
             print ('The {} {} goes VROOOM!'.format(
-                self.color, self.manuf)
+                    self.color, self.manuf))
         else:
             print ('The {} {} sputters out of gas '.format(
-                self.color, self.manuf
+                    self.color, self.manuf))
 
 
 class Car(Vehicle):
@@ -27,3 +27,9 @@ class Motorcycle(Vehicle):
 
         def helment(self):
             print('nice and safe')
+
+
+class ElectricCar(Car):
+
+    def drive(self):
+        print('The {} {} goes peeeeeee'.format(self.color, self.manuf))
